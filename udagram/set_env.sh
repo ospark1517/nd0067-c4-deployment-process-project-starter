@@ -1,5 +1,5 @@
 # This file is used for convenience of local development.
-# DO NOT STORE YOUR CREDENTIALS INTO GIT
+# DO NOT STORE YOUR CREDENTIALS INTO GIT Dont worry
 export POSTGRES_USERNAME=final_project
 export POSTGRES_PASSWORD="SR!MU1=:)osp1234"
 export POSTGRES_HOST=udacity-final-project-database1.czsjm4vm31x2.us-east-1.rds.amazonaws.com
