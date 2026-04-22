@@ -64,10 +64,10 @@ jobs:
              npm run frontend:build
              npm run api:build
 
-             cd udagram
+             cd udagram/udagram-api
              eb setenv POSTGRES_USERNAME=$POSTGRES_USERNAME POSTGRES_PASSWORD=$POSTGRES_PASSWORD POSTGRES_DB=$POSTGRES_DB POSTGRES_HOST=$POSTGRES_HOST AWS_BUCKET=$AWS_BUCKET AWS_REGION=$AWS_REGION JWT_SECRET=$JWT_SECRET URL=$URL
              eb deploy
-             cd ..
+             cd ../..
 
              npm run frontend:deploy
             
