@@ -23,23 +23,19 @@ jobs:
             echo $(node --version)
             echo "NPM --version" 
             echo $(npm --version)
-            npm run frontend:install
-      # TODO: Install dependencies in the the backend API          
+            npm run frontend:install       
       - run:
           name: Install API Dependencies
           command: |
             npm run api:install
-      # TODO: Lint the frontend
       - run:
           name: Front-End Lint
           command: |
             npm run frontend:lint
-      # TODO: Build the frontend app
       - run:
           name: Front-End Build
           command: |
-            npm run frontend:build
-      # TODO: Build the backend API      
+            npm run frontend:build   
       - run:
           name: API Build
           command: |
@@ -57,7 +53,6 @@ jobs:
       - checkout
       - run:
           name: Deploy App
-          # TODO: Install, build, deploy in both apps
           command: |
              npm run frontend:install
              npm run api:install
